@@ -1,0 +1,231 @@
+---
+title: '"Las clases sociales en tiempos de movilización social: Identidad de clases y revitalización sindical en Chile (1999-2019)"'
+subtitle: ".small[Ponencia Seminario Internacional Desigualdad y Movilidad Social en América Latina (DEMOSAL)]<br>"
+author: "Pablo Pérez y Valentina Andrade <br>.tiny[FONDECYT N°11190229 'Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada']"
+date: ".tiny[`r format(Sys.Date(), '%d %B, %Y')`]"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/fdl-fonts.css", "assets/fdl.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/remark-zoom.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrollin
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+```{r, load_refs, echo=FALSE, cache=FALSE, message=FALSE, warning=F}
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           cite.style = 'authoryear', 
+           style = "markdown",
+           hyperlink = FALSE, 
+           dashed = FALSE)
+myBib <- ReadBib("assets/example.bib", check = FALSE)
+top_icon = function(x) {
+  icons::icon_style(
+    icons::fontawesome(x),
+    position = "fixed", top = 10, right = 10
+  )
+}
+```
+
+## Motivación
+
+<br>
+
+- En la última década, Chile ha sido testigo de un **renacer** de la **movilización social** y **sindical**.
+
+<br>
+
+--
+.content-box-red[
+
+Preguntas clave:
+
+- **¿Qué influencia tienen estos fenómenos sobre la identidad de clase?**
+
+- **¿Ha cambiado esta identificación en el tiempo?**
+
+]
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Renacer de la  movilización social
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vRmNNMlM-t7a4avMicKHyVS_Uk7y50l3gEeGlhVb9XCRmPL9FFyQnFTGC1nJARL8HS2s6dQHsjIrtrQ/pub?w=960&amp;h=720">
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Movilización social y sindical
+
+.tiny[
+![](https://github.com/valentinaandrade/strikes-chile/raw/main/output/graph/strikes-evolution-social-national.png)
+]
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+## Revitalización huelga: carácter extralegal
+
+![](https://github.com/fabrica-datos-laborales/class-identity-chile/raw/main/output/images/figure1.png)
+
+---
+class: fdl-black center middle
+background-image: url("assets/logo/logo-blanco.png")
+background-size: 15%
+background-position: 100% 0%
+
+.white[
+# Hipótesis
+]
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+# Identidad de clase y posición de clase
+
+- **Posición objetiva de clase** determina las probabilidades de que las personas se **identifiquen** una clase en particular .tiny[*(cf. Jackman y Jackman 1983; Hout 2008; Andersen y Curtis 2012; Oddsson 2018).*]
+
+
+- Posiciones más desaventajadas social y económicamente tienen más probabilidades de identificarse como parte de una clase “baja” .tiny[*(Hout 2008; Elbert y Pérez 2018).*]
+
+--
+
+<br> 
+
+> $H_1$: quienes se ubican en posiciones de clase trabajadora o de clase subordinada (por ejemplo, autoempleados del sector informal) tendrán mayor probabilidad de identificarse con la clase trabajadora que quienes se encuentran ubicadas en posiciones de clase “privilegiadas” (por ejemplo, empleadores, directores de empresa o gerentes de alto nivel)
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+# Identidad de clase y afiliación sindical
+
+- La participación en sindicatos juega un rol central en la conformación de conciencia y solidaridad de clase (Fantasia, 1988)
+
+--
+
+- Sindicalizados tienen muchas mas probabilidades de participar en organizaciones políticas (Kerrissey y Schofer, 2018)
+
+
+- Sindicalizados perciben mayores niveles de oposición de clases que quienes no lo están (Wright, 1997)
+
+
+--
+
+> $H_2$: quienes están sindicalizados tendrán mayor probabilidad de identificarse con la clase trabajadora que quienes no lo están.
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+# Identidad de clase y politización en el tiempo
+
+- Efecto del ascenso de la movilización social y el cuestionamiento a modelo neoliberal **sobre la identidad de clase trabajadora**
+
+--
+
+> $H_3$: la probabilidad de identificarse con la clase trabajadora en la última década será ser mayor que en la década de 1990 o de 2000
+
+<br>
+--
+
+.pull-left[
+> $H4_1$: el impacto positivo de ser de clase trabajadora o de clase subordinada sobre la identidad de clase trabajadora será mayor en la última década en comparación a las décadas de 1990 y 2000
+
+]
+
+
+.pull-right[
+> $H4_2$: el impacto positivo de la afiliación sindical sobre la identidad de clase trabajadora será mayor en la última década en comparación a las décadas de 1990 y 2000
+
+]
+
+---
+class: fdl-black center middle
+background-image: url("assets/logo/logo-blanco.png")
+background-size: 15%
+background-position: 100% 0%
+
+.white[
+# Datos y métodos
+]
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+- **Datos**: la encuesta ISSP, módulo Desigualdades Sociales (1999, 2009 y 2019, *n* = 2.808)
+
+- **Método**: [modelos de regresión logística en R](https://github.com/fabrica-datos-laborales/class-identity-chile)
+
+---
+
+
+
+Nuestros hallazgos sugieren que quienes pertenecen a la clase trabajadora tienen mayores probabilidades de identificarse con dicha clase. Sin embargo, contrario nuestras hipótesis, los análisis no indican que la identidad de clase trabajadora se refuerce como resultado de la afiliación sindical, ni que ella haya aumentado significativamente en la última década. 
+
+
+---
+class: fdl-black
+background-image: url("assets/logo/logo-blanco.png")
+background-size: 15%
+background-position: 100% 0%
+
+# ¡Gracias!
+
+.pull-right[.pull-down[
+
+.white[**Pablo Pérez Ahumada** - Investigador principal]
+<a href="mailto:pperez@uahurtado.cl">
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` pperez@uahurtado.cl]
+</a>
+
+<a href="https://fabricadedatoslaborales.cl/">
+.white[`r icons::icon_style(icons::fontawesome("link"), fill = "white")` https://fabricadedatoslaborales.cl]
+</a>
+
+<a href="http://github.com/fabrica-datos-laborales">
+.white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @fabrica-datos-laborales]
+</a>
+
+<br>
+.white[**Valentina Andrade** - Asistente de investigación]
+<a href="mailto:valentinaandrade@uchile.cl">
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` valentinaandrade@uchile.cl]
+</a>
+
+
+<a href="https://github.com/valentinaandrade">
+.white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @valentinaandrade]
+</a>
+
+<br><br>
+
+]]
+
+.pull-left.white.middle[
+FONDECYT N°11190229<br>*Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada*]
