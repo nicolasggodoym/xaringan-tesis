@@ -1,5 +1,5 @@
 ---
-title: "Explotación, recursos de poder y mercantilización de las actitudes hacia el trabajo"
+title: "Relaciones de clase, enajenación y actitud hacia el trabajo"
 subtitle: ".tiny[Tesis para optar al título de Sociólogo]"
 author: "Nicolás Godoy"
 date: "`r format(Sys.Date(), '%d %B,%Y')`"
@@ -41,66 +41,19 @@ top_icon = function(x) {
 }
 
 library(tidyverse)
+library(dplyr)
 library(knitr)
 library(kableExtra)
 library(sjPlot)
 library(lme4)
+library(patchwork)
+library(ggrepel)
+data = readRDS(url("https://github.com/nicolasggodoym/tesis/blob/main/output/data/data.rds?raw=true"))
+final_fix = lmer(job_money ~ clase + UNION + SEX +ipo+(1|country), data)
+lm_clase_ci <- lm(job_money ~ clase + UNION + SEX, data = data) 
 ```
 
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## ¿Qué se abordará en esta presentación?
-
-<br>
-<br>
-<br>
-
---
-
-- Antecedentes 
-
---
-
-- Objetivos e hipótesis de investigación
-
---
-
-- Metodología
-
---
-
-- Análisis preliminar
-
---
-
-- Conclusiones
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-## Antecedentes  
-
-<br>
-<br>
-<br>
-<br>
-
-- Explotación y enajenación: discutiendo la pérdida de la centralidad del trabajo
---
-<br>
-- Clase y conciencia: posición, articulación y conflicto
---
-<br>
-- El trabajo asalariado en el neoliberalismo
---
-<br>
-- Política de clases e instituciones
-
----
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
@@ -129,6 +82,31 @@ Analizar el **efecto** de factores de nivel **individual** y **contextual** asoc
 - Analizar el *efecto conjunto* de la posición de clase y los recursos de poder de la clase trabajadora en la actitud mercantilizada hacia el trabajo remunerado.
 
 ]
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Antecedentes  
+
+<br>
+<br>
+<br>
+<br>
+
+- Explotación y enajenación: discutiendo la pérdida de la centralidad del trabajo
+--
+<br>
+- Clase y conciencia: posición, articulación y conflicto
+--
+<br>
+- El trabajo asalariado en el neoliberalismo
+--
+<br>
+- Política de clases e instituciones
+
+
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
@@ -145,6 +123,7 @@ background-position: 100% 0%
 
 - El sometimiento simultáneo a diversos tipos de explotación estará asociado a una actitud hacia el trabajo más mercantilizada. 
 - Un mayor Índice de Poder Obrero (IPO) estará asociado a una actitud hacia el trabajo más mercantilizada.
+
 - Incorporando factores contextuales, el poder explicativo de la posición de clase respecto de la actitud mercantilizada hacia el trabajo tendería a reducirse. 
 
 ]
@@ -154,9 +133,7 @@ background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Metodología
-
-### Datos
+## Datos
 
 - ISSP Work Orientations IV (2015)
   + 25 países
@@ -172,115 +149,71 @@ background-position: 100% 0%
   + Nivel 2: **Índice de Poder Obrero (IPO)**, promedio de valores estandarizados para el Poder Potencial de los trabajadores (Rudra, 2003), la densidad sindical y el Índice de Derechos Laborales (Kucera y Sari, 2019)
   
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## Metodología
-
-### Análisis bivariado
-
-```{r, include=F, warning=F}
-data = readRDS(url("https://github.com/nicolasggodoym/tesis/raw/main/output/data/data.rds"))
-```
-
-```{r echo=FALSE}
-data %>% 
-  group_by(clase) %>%
-  summarise(ci = round(mean(job_money, na.rm = T),3)) %>% 
-  ungroup() %>% 
-  kable(caption = "Media de Índice de actitud mercantilizada hacia el trabajo según clase social",
-        format = "html",
-        col.names = c("Posición de clase", 
-                      "Media de actitud mercantilizada hacia el trabajo")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :") 
+```{r, echo = FALSE, out.height="100%", fig.height=4, out.width="100%", fig.align='center'}
+knitr::include_graphics("assets/esquema_clases.png")
 ```
 
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## Metodología
-
-### Análisis bivariado
-
-```{r, echo = F}
+```{r, echo=F, include = T, warning=F, out.width="60%", fig.align='center'}
 data %>% 
-  group_by(country) %>%
-  summarise(plp_std = round(mean(plp_std),3),
-            den_std = round(mean(den_std), 3),
-            lri_std = round(mean(lri_std), 3),
-            ipo = round(mean(ipo), 3)) %>% 
-  ungroup() %>% #Transformamos en dataframe para manipular con dplyr
-  .[1:10,] %>% 
-  kable(caption = "Distribución de variables macro según país (1-10)",
-        format = "html",
-        col.names = c("País", "P.P.T.", "Densidad sindical", 
-                      "Índice de derechos Laborales",
-                      "Índice de Poder Obrero")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :") 
+  filter(if_any(c(job_money, clase, ends_with("std")), ~!is.na(.))) %>% 
+  group_by(clase) %>% 
+  summarise(m = mean(job_money)) %>% 
+  ggplot(aes(x = clase, y = m, fill = "#FF3300")) +
+  geom_bar(position = position_dodge(.2),stat = "identity", color = "black") +
+  geom_text(aes(label=round(m,3)), vjust=1.5)+
+  labs(title = "Media de actitud enajenada hacia el trabajo según clase social", 
+       caption = "Elaboración propia en base a ISSP (2015)") +
+  xlab("") +
+  ylab("") + 
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 2)) +
+  theme_classic() +
+  theme(legend.position = "none")
 ```
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## Metodología
-
-
-```{r, echo = F}
+```{r, echo=F, include = T, warning=F, out.width="60%", fig.align='center'}
 data %>% 
-  group_by(country) %>%
-  summarise(plp_std = round(mean(plp_std),3),
-            den_std = round(mean(den_std), 3),
-            lri_std = round(mean(lri_std), 3),
-            ipo = round(mean(ipo), 3)) %>% 
-  ungroup() %>% #Transformamos en dataframe para manipular con dplyr
-  .[11:19,] %>% 
-  kable(caption = "Distribución de variables macro según país (11-19)",
-        format = "html",
-        col.names = c("País", "P.P.T.", "Densidad sindical", 
-                      "Índice de derechos Laborales",
-                      "Índice de Poder Obrero")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :") 
+  filter(if_any(c(job_money, clase, ends_with("std")), ~!is.na(.))) %>% 
+  group_by(country) %>% 
+  summarise(m = mean(job_money)) %>% 
+  filter(country %in% c("Alemania", "Australia","Chile", "Dinamarca", "Eslovaquia",
+                        "España", "Estados Unidos de América (los)", "Finlandia", "México",
+                        "Noruega", "Rusia")) %>% 
+  ggplot(aes(x = reorder(country, -m), y = m, fill = "#FF3300")) +
+  geom_bar(position = position_dodge(.2),stat = "identity", color = "black") +
+  geom_text(aes(label=round(m,3)), vjust=0.4, hjust=1.3)+
+  labs(title = "Media de actitud enajenada hacia el trabajo por país", 
+       caption = "Elaboración propia en base a ISSP (2015)") +
+  xlab("") +
+  ylab("") + 
+  coord_flip()+
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+  theme_classic() +
+  theme(legend.position = "none")
 ```
-
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## Metodología
-
-
-```{r, echo = F}
+```{r, echo=F, include = T, warning=F,message=F, out.width="60%", fig.align='center'}
 data %>% 
-  group_by(country) %>%
-  summarise(plp_std = round(mean(plp_std),3),
-            den_std = round(mean(den_std), 3),
-            lri_std = round(mean(lri_std), 3),
-            ipo = round(mean(ipo), 3)) %>% 
-  ungroup() %>% #Transformamos en dataframe para manipular con dplyr
-  .[20:25,] %>% 
-  kable(caption = "Distribución de variables macro según país (20-25)",
-        format = "html",
-        col.names = c("País", "P.P.T.", "Densidad sindical", 
-                      "Índice de derechos Laborales",
-                      "Índice de Poder Obrero")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :") 
+  filter(if_any(c(job_money, clase, ends_with("std")), ~!is.na(.))) %>% 
+  group_by(country) %>% 
+  summarise(m = ipo) %>% 
+  filter(country %in% c("Alemania", "Australia","Chile", "Dinamarca", "Eslovaquia",
+                        "España", "Estados Unidos de América (los)", "Finlandia", "México",
+                        "Noruega", "Rusia")) %>% 
+  ggplot(aes(x = reorder(country, -m), y = m, fill = "#FF3300")) +
+  geom_bar(position = position_dodge(.2),stat = "identity", color = "black") +
+  geom_text(aes(label=round(m,3)), vjust =1.5)+
+  labs(title = "Índice de Poder Obrero (IPO) por país", 
+       caption = "Elaboración propia en base a ISSP (2015)") +
+  xlab("") +
+  ylab("") +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+  theme_classic() +
+  theme(legend.position = "none")
 ```
 ---
 background-image: url("assets/logo/logo.png")
@@ -305,33 +238,13 @@ background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Ajuste de los modelos estimados
+class: center, middle
 
-
-```{r, echo = FALSE, out.height="40%", fig.height=1, out.width="40%", fig.align='center'}
-knitr::include_graphics("assets/ajuste_modelos.png")
-```
-
+# Resultados
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## Modelo de regresión lineal multinivel
-
-```{r, echo = F, out.height="30%", fig.height=0.75, out.width="50%", fig.align='center'}
-knitr::include_graphics("assets/ml3_std.png")
-```
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-## Diferencias por país
-
-```{r, echo = F}
-final_fix = lmer(job_money ~ clase + UNION + SEX +ipo+(1|country), data)
+```{r, echo=F, include = T, warning=F,message=F, out.width="60%", fig.align='center'}
+x <- data.frame(coef(final_fix)$country)
 
 pais = sort(unique(data$country))
 ipo = data %>% 
@@ -339,71 +252,41 @@ ipo = data %>%
   distinct(pais, ipo)
 x <- data.frame(pais, b0 = coef(final_fix)$country)
 x = merge(x, ipo, by = "pais")
+row.names(x) = NULL
 x %>% 
   select(1, 2, ipo) %>% 
   mutate_at(vars(2, 3), ~(round(., 3))) %>% 
-  .[1:10,] %>% 
-  kable(caption = "Interceptos aleatorios estimados en el 
-Modelo 12 (1)",
-        format = "html",
-        col.names = c("País",
-                      "Intercepto aleatorio",
-                      "IPO")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :")
+  rowwise() %>% 
+  mutate(pred = round(b0..Intercept. + (ipo*-.53), 3)) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = ipo, y = pred)) +
+  geom_point() + 
+  geom_text_repel(aes(label=pais), max.overlaps = 25) +
+  geom_smooth(method = "lm", colour = "black") + 
+  labs(title = "Relación entre el IPO y los valores predichos para un obrero hombre
+no sindicalizado",
+       subtitle="",
+       x ="IPO", y = "Valores predichos",
+       caption = "Elaboración propia") +
+  theme_minimal() 
 
 ```
+
+
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Diferencias por país
-
-```{r, echo = F}
-x %>% 
-  select(1, 2, ipo) %>% 
-  mutate_at(vars(2, 3), ~(round(., 3))) %>% 
-  .[11:19,] %>% 
-  kable(caption = "Interceptos aleatorios estimados en el 
-Modelo 12 (2)",
-        format = "html",
-        col.names = c("País",
-                      "Intercepto aleatorio",
-                      "IPO")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :")
-
+```{r, echo = F, out.width="110%", out.height="100%", fig.align='center'}
+knitr::include_graphics("assets/predclase_notitulo.jpg")
 ```
+
 ---
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
 
-## Diferencias por país
 
-```{r, echo = F}
-x %>% 
-  select(1, 2, ipo) %>% 
-  mutate_at(vars(2, 3), ~(round(., 3))) %>% 
-  .[20:25,] %>% 
-  kable(caption = "Interceptos aleatorios estimados en el 
-Modelo 12  (3)",
-        format = "html",
-        col.names = c("País",
-                      "Intercepto aleatorio",
-                      "IPO")) %>% 
-  kable_classic(full_width = F,
-                html_font = "Times New Roman") %>% 
-  footnote("Elaboración propia",
-           general_title = "Fuente :")
 
-```
 ---
 
 background-image: url("assets/logo/logo.png")
