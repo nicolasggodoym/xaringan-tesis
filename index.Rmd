@@ -1,7 +1,7 @@
 ---
 title: "Relaciones de clase, enajenación y actitud hacia el trabajo"
 subtitle: ".tiny[Tesis para optar al título de Sociólogo]"
-author: "Nicolás Godoy"
+author: "Nicolás Godoy Márquez"
 date: "`r format(Sys.Date(), '%d %B,%Y')`"
 output:
   xaringan::moon_reader:
@@ -60,7 +60,7 @@ background-position: 100% 0%
 
 ## Objetivos de investigación 
 
-<br>
+
 
 ### Objetivo **general**
 
@@ -71,7 +71,6 @@ Analizar el **efecto** de factores de nivel **individual** y **contextual** asoc
 ]
 
 --
-
 
 ### Objetivos **específicos**
 
@@ -89,23 +88,111 @@ background-size: 15%
 background-position: 100% 0%
 
 ## Antecedentes  
+<br>
+.large[**Explotación y enajenación: discutiendo la pérdida de la centralidad del trabajo**] 
+<br>
+.content-box-red[
+- Ser humano y trabajo, capitalismo y enajenación .small[(Cohen, 2015; Marx, 2004; Lukács, 1970)].
+- Enajenación y explotación; metafísica y ciencia .small[(Dahrendorf, 1962; Althusser, 2004)].
+- La acción comunicativa y la deliberación como lo propiamente humano .small[(Arendt, 2019; Habermas, 1999, 2002; Aguilar, 2001)]. 
+- El fin de la centralidad del trabajo .small[(Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; León & Zemelman, 1997)] y la pérdida de su sentido .small[(Sennett, 2019)].
+- Una definición amplia del trabajo .small[(Noguera, 2002)], considerando las dimensiones
+  + **Cognitivo-instrumental**;
+  + Práctico-moral; y
+  + Estético-expresiva.
+
+]
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Antecedentes  
+<br>
+.large[**Clase y actitudes: posición, articulación y conflicto**
+]
+<br>
+.content-box-red[
+- Las relaciones de clase como variable con poder explicativo en actitudes hacia
+  + Políticas redistributivas .small[(Dodson, 2017)],
+  + El conflicto y la cohesión social .small[(Edlund & Lindh, 
+2015; Kelley & Evans, 1995; Pérez Ahumada 
+& Andrade de la Horra, 2021; Ringqvist, 2021)]
+  + La identidad de clase .small[(Elbert & Pérez, 2018)],
+  + La intervención del Estado en la economía .small[(Pérez Ahumada, 2013)],
+  + El trabajo (Svallfors, 2006)
+]
+
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Antecedentes  
+<br>
+.large[**Política de clases e instituciones. El trabajo asalariado en el capitalismo**
+]
+<br>
+.content-box-red[
+- Transformaciones institucionales en la economía
+  + _Varieties of Capitalism (VoC)_: El enfoque funcionalista .small[(Hall & Soskice, 2001)].
+  + **Aproximación de Recursos de Poder**: un análisis dinámico .small[(Korpi, 2006)]
+
+- Balanza de las transformaciones económico-políticas a favor del capital .small[(Antía, 2019;  Bril-Mascarenhas & Maillet, 2019; Brookes, 2018; Carneiro et al., 2020; 
+Fairfield, 2010, 2015a, 2015b; Fairfield & Garay, 2017; Pérez Ahumada, 2020; Schmalz et al., 2018a; Streeck & Thelen, 2005)]
+]
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Antecedentes  
+<br>
+.large[**Política de clases e instituciones. El trabajo asalariado en el capitalismo**
+]
+<br>
+.content-box-red[
+- Neoliberalismo, flexibilidad, desregulación y autoritarismo en la relación capital-trabajo .small[(Aguilar, 
+2001; Antía, 2019; Baccaro & Howell, 2011; Weller, 1998; Wright, 2015)]
+
+- La dificultad del establecimiento de un acuerdo de clases: insuficiencia del rendimiento económico, problemas redistributivos e intensificación del conflicto (Alemán, 2008; Poulantzas, 1991; Rudra, 2002; Wright, 2015). 
+
+
+]
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+class: center, middle
+
+### La condensación material del **conflicto de clase** en la configuración concreta de las relaciones capital-trabajo en las diversas formaciones sociales capitalistas, tiene por efecto la articulación de **relaciones sociales de producción** que propician la **enajenación** en la **relación que los trabajadores establecen con su trabajo**
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Hipótesis
 
 <br>
-<br>
-<br>
-<br>
 
-- Explotación y enajenación: discutiendo la pérdida de la centralidad del trabajo
---
-<br>
-- Clase y conciencia: posición, articulación y conflicto
---
-<br>
-- El trabajo asalariado en el neoliberalismo
---
-<br>
-- Política de clases e instituciones
+.content-box-red[
 
+- $H_{1a}$: Las clases **despojadas de medios de producción** sometidas a formas múltiples de explotación presentarán actitudes más enajenadas hacia el trabajo. 
+  + La **clase proletaria** presentará los valores más altos en su actitud mercantilizada hacia el trabajo.
+  + Los **Expertos directivos** presentarán los valores más bajos en su actitud mercantilizada hacia el trabajo.
+  + Los valores promedio de actitud mercantilizada hacia el trabajo serán mayores en quienes poseen activos de **cualificación**, respecto de quienes poseen activos de **autoridad**. 
+  
+$$
+\begin{aligned}
+  H1a: \beta_{p} < \beta_{dnc} < \beta_{ed}
+\end{aligned}
+$$
+
+
+]
 
 ---
 background-image: url("assets/logo/logo.png")
@@ -114,18 +201,27 @@ background-position: 100% 0%
 
 ## Hipótesis
 
-
-<br>
-<br>
 <br>
 
 .content-box-red[
 
-- El sometimiento simultáneo a diversos tipos de explotación estará asociado a una actitud hacia el trabajo más mercantilizada. 
-- Un mayor Índice de Poder Obrero (IPO) estará asociado a una actitud hacia el trabajo más mercantilizada.
+- $H_{1b}$: Entre las clases **propietarias**, aquellas posiciones sometidas a **opresión económica** (Wright, 2015) presentarán actitudes más enajenadas hacia el trabajo. 
+  + La **pequeña burguesía no profesional** presentará los valores más altos en actitud enajenada hacia el trabajo. 
 
-- Incorporando factores contextuales, el poder explicativo de la posición de clase respecto de la actitud mercantilizada hacia el trabajo tendería a reducirse. 
+$$
+\begin{aligned}
+  H1b: \beta_{pbnp} < \beta_{pbp} <= \beta_{c}
+\end{aligned}
+$$
 
+- $H_{2}$: Formaciones sociales donde la clase trabajadora tenga mayores **recursos de poder** presentarán, en promedio, actitudes menos enajenadas hacia el trabajo.
+  + Se espera que el efecto contextual del **Índice de Poder Obrero** en la actitud mercantilizada hacia el trabajo sea positivo en todos los países analizados.
+
+$$
+\begin{aligned}
+  H2: \beta_{IPO} > 0
+\end{aligned}
+$$
 ]
 
 ---
@@ -142,18 +238,35 @@ background-position: 100% 0%
 - Variable *dependiente*: **Actitud mercantilizada hacia el trabajo**
   + *A job is just a way of earning money – no more*
   + Item tipo Likert con 5 niveles 
-  + Valor más bajo indica mayor grado de acuerdo
+  + Valor más alto indica mayor grado de acuerdo
   
 - Variables *predictoras*: 
-  + Nivel 1: **Posición de clase** 
-  + Nivel 2: **Índice de Poder Obrero (IPO)**, promedio de valores estandarizados para el Poder Potencial de los trabajadores (Rudra, 2003), la densidad sindical y el Índice de Derechos Laborales (Kucera y Sari, 2019)
-  
----
+  + Nivel 1: **Posición de clase** (Wright, 2015)
+  + Nivel 2: **Índice de Poder Obrero (IPO)**, promedio de valores estandarizados para el Poder Potencial de los trabajadores (Rudra, 2003), la densidad sindical (OIT, 2022) y el Índice de Derechos Laborales (Kucera y Sari, 2019)
 
-```{r, echo = FALSE, out.height="100%", fig.height=4, out.width="100%", fig.align='center'}
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+## La posición de clase (Wright, 2015)
+<br>
+- Posición ocupada por el individuo en el entramado de las relaciones sociales de producción, derivadas principalmente de las relaciones de 
+propiedad, pero también de los mecanismos de exclusión relativos a la determinación de las condiciones en que se desenvolverá el proceso de trabajo. 
+
+- **Opresión económica**: 
+  + Principio de bienestar inverso
+  + Principio de exclusión
+  
+- **Explotación**: opresión económica + apropiación de valor. 
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## La posición de clase (Wright, 2015)
+```{r, echo = FALSE, out.height="90%", fig.height=4, out.width="90%", fig.align='center'}
 knitr::include_graphics("assets/esquema_clases.png")
 ```
-
 ---
 
 ```{r, echo=F, include = T, warning=F, out.width="60%", fig.align='center'}
@@ -173,7 +286,9 @@ data %>%
   theme(legend.position = "none")
 ```
 ---
-
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
 ```{r, echo=F, include = T, warning=F, out.width="60%", fig.align='center'}
 data %>% 
   filter(if_any(c(job_money, clase, ends_with("std")), ~!is.na(.))) %>% 
@@ -195,7 +310,27 @@ data %>%
   theme(legend.position = "none")
 ```
 ---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
 
+## Recursos de poder
+<br>
+- **Poder**: capacidad de las clases capitalista y trabajadora para realizar sus intereses de clase, mutuamente contradictorios (Wright, 2000), frente a la otra clase y/o frente al Estado (Wright, 2015).
+- **Conflicto** articulado en tres esferas (Wright, 2015)
+  + El intercambio (mercado del trabajo),
+  + La producción (proceso de trabajo), y
+  + La política y administración.
+
+- Los **recursos de poder** de la clase trabajadora (Schmalz, 2018b):
+  + **Asociativo** (densidad sindical);
+  + **Estructural** (P.P.T.): de mercado del trabajo (colectivo) y en el espacio de trabajo (individual);
+  + **Político-institucional**(L.R.I.); y
+  + Societal: comunicativo y de coalición.
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
 ```{r, echo=F, include = T, warning=F,message=F, out.width="60%", fig.align='center'}
 data %>% 
   filter(if_any(c(job_money, clase, ends_with("std")), ~!is.na(.))) %>% 
@@ -241,7 +376,67 @@ background-position: 100% 0%
 class: center, middle
 
 # Resultados
+
 ---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+```{r, echo=F, include = T, warning=F,message=F, out.width="60%", fig.align='center'}
+p = data.frame(clases = factor(c("Proletario",
+           "Obrero calificado",
+           "Experto no directivo",
+           "Directivo/supervisor no calificado",
+           "Directivo/supervisor calificado",
+           "Gerente",
+           "Pequeña burguesia no profesional",
+           "Pequeña burguesia profesional",
+           "Capitalista"), levels = c("Proletario",
+                                      "Obrero calificado",
+                                      "Experto no directivo",
+                                      "Directivo/supervisor no calificado",
+                                      "Directivo/supervisor calificado",
+                                      "Gerente",
+                                      "Pequeña burguesia no profesional",
+                                      "Pequeña burguesia profesional",
+                                      "Capitalista")),
+           pred = c(2.23,
+                    2.23-.22,
+                    2.23-.61,
+                    2.23-.22,
+                    2.23-.48,
+                    2.23-.69,
+                    2.23-.34,
+                    2.23-.78,
+                    2.23-.76))
+           
+p = p %>%
+  rowwise() %>% 
+  mutate(inf = pred - ((var(.$pred)/sqrt(10))*1.96),
+         sup = pred + ((var(.$pred)/sqrt(10))*1.96)) %>%
+  ungroup()
+
+p %>% 
+  ggplot(aes(x = clases, y = pred), 
+         label = pred) +
+  geom_point() + 
+  geom_errorbar(aes(ymin = inf, ymax = sup, width = 0.2)) +
+  geom_text(aes(label = pred), hjust =1.3) +
+  labs(title = "Valores predichos promedio según clase social",
+       subtitle = "",
+       y = "", x ="",
+       caption = "Elaboración propia") +
+  guides(color = "none") +
+  scale_color_discrete(name = "Clases sociales") +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+  theme_minimal()
+
+```
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
 
 ```{r, echo=F, include = T, warning=F,message=F, out.width="60%", fig.align='center'}
 x <- data.frame(coef(final_fix)$country)
@@ -285,10 +480,6 @@ knitr::include_graphics("assets/predclase_notitulo.jpg")
 
 ---
 
-
-
----
-
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
@@ -301,12 +492,43 @@ background-position: 100% 0%
 
 - Existe una relación positiva entre el *sometimiento a múltiples tipos de explotación* y la actitud mercantilizada hacia el trabajo. 
 - **Jerarquía** del efecto de los activos: autoridad, calificaciones y propiedad. 
+- La **opresión económica** ejerce un positivo en la mercantilización de las actitudes hacia el trabajo en las clases propietarias
 
 ### Nivel macro
 
-- No parece existir relación entre intercepto aleatorio estimado y tipo de coordinación económica. 
-- El efecto del IPO sobre las actitudes al trabajo son *__positivos__ y similares* entre países. 
-- El poder explicativo de la posición de clase se debilita al incorporar factores contextuales en las estimaciones
+- El efecto del IPO sobre las actitudes al trabajo son *__positivos__ y fijos* entre países. 
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Discusión
+
+- El efecto de la **situación individual y contextual** de los sujetos en las **relaciones sociales de producción** sobre su **aproximación hacia el trabajo**
+- El desarrollo histórico de las **contradicciones** del capitalismo ha significado el **empobrecimiento** de la relación entre las personas y sus labores productivas
+  + La materialidad del vínculo entre **enajenación** y **explotación** .small[(Dahrendorf, 1962; Althusser, 2004)]
+  + ¿Pérdida de **centralidad** o **pérdida de sentido**? .small[(Arendt, 2019; Aguilar, 2001; Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Habermas, 1999, 2002; León & Zemelman, 1997; Lukács, 1970; Sennett, 2019)]
+  
+
+  
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Limitaciones
+
+- No cumplimiento del supuesto linealidad
+- Falta de incorporación de predictores subjetivos
+
+## .red[Proyecciones]
+
+- Incorporar predictores subjetivos .small[(percepciones sobre clima laboral, actitudes hacia la desigualdad económica, etc.)] en el análisis.
+- Incorporar nuevos predictores contextuales asociados a las relaciones de clase .small[(tasa de informalidad, días-persona perdidos, etc.)].
+- Complejizar la medición del grado de enajenación hacia el trabajo en su multidimensionalidad.
+- Incorporar el nivel de sector económico en el análisis.
+- Analizar diferentes fenómenos subjetivos .small[(actitudes hacia la democracia, la corporativización de la economía, políticas redistributivas,  el autoempleo, etc.)] incorporando 
 
 ---
 
