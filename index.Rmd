@@ -78,9 +78,9 @@ Analizar el **efecto** de factores de nivel **individual** y **contextual** asoc
 
 .content-box-red[
 
-- Determinar el efecto de la *posición de clase* en la actitud mercantilizada hacia el trabajo remunerado. 
-- Determinar el efecto de los *recursos de poder de la clase trabajadora* (estructural, asociativo y político-institucional) en la actitud mercantilizada hacia el trabajo remunerado. 
-- Analizar el *efecto conjunto* de la posición de clase y los recursos de poder de la clase trabajadora en la actitud mercantilizada hacia el trabajo remunerado.
+- Determinar el efecto de la **posición de clase** en la actitud mercantilizada hacia el trabajo remunerado. 
+- Determinar el efecto de los **recursos de poder de la clase trabajadora** (estructural, asociativo y político-institucional) en la actitud mercantilizada hacia el trabajo remunerado. 
+- Analizar el **efecto conjunto** de la posición de clase y los recursos de poder de la clase trabajadora en la actitud mercantilizada hacia el trabajo remunerado.
 
 ]
 
@@ -96,33 +96,12 @@ background-position: 100% 0%
 .content-box-red[
 - Ser humano y trabajo, capitalismo y enajenación .small[(Cohen, 2015; Marx, 2004, 2014; Jaeggi, 2014; Lukács, 1970; Rosa, 2016)].
 - Enajenación y explotación; metafísica y ciencia .small[(Dahrendorf, 1962; Althusser, 2004)].
-- La acción comunicativa y la deliberación como lo propiamente humano .small[(Arendt, 2019; Aguilar, 2001; Habermas, 1999, 2002)]. 
-- El fin de la centralidad del trabajo .small[(Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; León & Zemelman, 1997)] y la pérdida de su sentido .small[(Sennett, 2019)].
+- La acción comunicativa y el fin de la centralidad del trabajo .small[(Aguilar, 2001; Antunes, 2005; Arendt, 2019; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Habermas, 1999, 2002; León & Zemelman, 1997; Sennett, 2019)]
 - Una definición amplia del trabajo .small[(Noguera, 2002)], considerando las dimensiones
   + **Cognitivo-instrumental**;
   + Práctico-moral; y
   + Estético-expresiva.
 
-]
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-## Antecedentes  
-<br>
-.large[**Clase y actitudes: posición, articulación y conflicto**
-]
-<br>
-.content-box-red[
-- Las relaciones de clase como variable con poder explicativo en actitudes hacia
-  + Políticas redistributivas .small[(Dodson, 2017)],
-  + El conflicto y la cohesión social .small[(Edlund & Lindh, 
-2015; Kelley & Evans, 1995; Pérez Ahumada 
-& Andrade de la Horra, 2021; Ringqvist, 2021)]
-  + La identidad de clase .small[(Elbert & Pérez, 2018)],
-  + La intervención del Estado en la economía .small[(Pérez Ahumada, 2013)],
-  + El trabajo (Svallfors, 2006)
 ]
 
 ---
@@ -161,6 +140,24 @@ background-position: 100% 0%
 
 
 ]
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Antecedentes  
+<br>
+.large[**Clase y actitudes: posición, articulación y conflicto**
+]
+<br>
+.content-box-red[
+- Las relaciones de clase como variable con poder explicativo en actitudes hacia
+  + Políticas redistributivas .small[(Dodson, 2017)],
+  + El conflicto y la cohesión social .small[(Edlund & Lindh, 2015; Kelley & Evans, 1995; Pérez Ahumada & Andrade de la Horra, 2021; Ringqvist, 2021)],
+  + La identidad de clase .small[(Elbert & Pérez, 2018)],
+  + La intervención del Estado en la economía .small[(Pérez Ahumada, 2013)],
+  + El trabajo (Svallfors, 2006), entre otros. 
+]
 
 ---
 background-image: url("assets/logo/logo.png")
@@ -183,12 +180,12 @@ background-position: 100% 0%
 
 - $H_{1a}$: Las clases **despojadas de medios de producción** sometidas a formas múltiples de explotación presentarán actitudes más enajenadas hacia el trabajo. 
   + La **clase proletaria** presentará los valores más altos en su actitud mercantilizada hacia el trabajo.
-  + Los **Expertos directivos** presentarán los valores más bajos en su actitud mercantilizada hacia el trabajo.
-  + Los valores promedio de actitud mercantilizada hacia el trabajo serán mayores en quienes poseen activos de **cualificación**, respecto de quienes poseen activos de **autoridad**. 
+  + Los **Gerentes** presentarán los valores más bajos en su actitud mercantilizada hacia el trabajo.
+  + Los valores promedio de actitud mercantilizada hacia el trabajo serán menores en quienes poseen activos de **cualificación**, respecto de quienes poseen activos de **autoridad**. 
   
 $$
 \begin{aligned}
-  H1a: \beta_{p} < \beta_{dnc} < \beta_{ed}
+  H1a: \hat{Y}_{p} > \hat{Y}_{dnc} > \hat{Y}_{g}
 \end{aligned}
 $$
 
@@ -207,20 +204,20 @@ background-position: 100% 0%
 .content-box-red[
 
 - $H_{1b}$: Entre las clases **propietarias**, aquellas posiciones sometidas a **opresión económica** (Wright, 2015) presentarán actitudes más enajenadas hacia el trabajo. 
-  + La **pequeña burguesía no profesional** presentará los valores más altos en actitud enajenada hacia el trabajo. 
+  + La **pequeña burguesía no profesional** presentará los valores más altos en actitud mercantilizada hacia el trabajo. 
 
 $$
 \begin{aligned}
-  H1b: \beta_{pbnp} < \beta_{pbp} <= \beta_{c}
+  H1b: \hat{Y}_{pbnp} > \hat{Y}_{pbp} >= \hat{Y}_{c}
 \end{aligned}
 $$
 
 - $H_{2}$: Formaciones sociales donde la clase trabajadora tenga mayores **recursos de poder** presentarán, en promedio, actitudes menos enajenadas hacia el trabajo.
-  + Se espera que el efecto contextual del **Índice de Poder Obrero** en la actitud mercantilizada hacia el trabajo sea positivo en todos los países analizados.
+  + Se espera que el efecto contextual del **Índice de Poder Obrero** en la actitud mercantilizada hacia el trabajo sea negativo en todos los países analizados.
 
 $$
 \begin{aligned}
-  H2: \beta_{IPO} > 0
+  H2: \beta_{IPO} < 0
 \end{aligned}
 $$
 ]
@@ -491,13 +488,13 @@ background-position: 100% 0%
 
 ### Nivel micro
 
-- Existe una relación positiva entre el *sometimiento a múltiples tipos de explotación* y la actitud mercantilizada hacia el trabajo. 
+- Existe una relación positiva entre el **sometimiento a múltiples tipos de explotación** y la actitud mercantilizada hacia el trabajo. 
 - **Jerarquía** del efecto de los activos: autoridad, calificaciones y propiedad. 
-- La **opresión económica** ejerce un positivo en la mercantilización de las actitudes hacia el trabajo en las clases propietarias
+- La **opresión económica** ejerce un positivo en la mercantilización de las actitudes hacia el trabajo entre las clases propietarias.
 
 ### Nivel macro
 
-- El efecto del IPO sobre las actitudes al trabajo son *__positivos__ y fijos* entre países. 
+- El efecto del IPO sobre las actitudes al trabajo es *__negativo__ y fijo* entre los países analizados. 
 
 ---
 background-image: url("assets/logo/logo.png")
@@ -506,12 +503,10 @@ background-position: 100% 0%
 
 ## Discusión
 
-- El efecto de la **situación individual y contextual** de los sujetos en las **relaciones sociales de producción** sobre su **aproximación hacia el trabajo**
-- El desarrollo histórico de las **contradicciones** del capitalismo ha significado el **empobrecimiento** de la relación entre las personas y sus labores productivas
-  + La materialidad del vínculo entre **enajenación** y **explotación** .small[(Althusser, 2004; Dahrendorf, 1962; Jaeggi, 2014; Rosa, 2016)]
-  + ¿Pérdida de **centralidad** o **pérdida de sentido**? .small[(Arendt, 2019; Aguilar, 2001; Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Habermas, 1999, 2002; León & Zemelman, 1997; Lukács, 1970; Sennett, 2019)]
-  
-
+- La **situación individual y contextual** de los sujetos en las **relaciones sociales de producción** tienen un efecto estadísticamente significativo sobre su **aproximación hacia el trabajo remunerado** .small[(Dodson, 2017; Edlund & Lindh, 2015; Elbert & Pérez, 2018; Kelley & Evans, 1995; Pérez Ahumada, 2013; Pérez Ahumada & Andrade de la Horra, 2021; Ringqvist, 2021; Svallfors, 2006)]. 
+- El desarrollo histórico de las **contradicciones** del capitalismo ha significado el **empobrecimiento** de la relación entre las personas y sus labores productivas.
+  + La materialidad del vínculo entre **enajenación** y **explotación** .small[(Althusser, 2004; Dahrendorf, 1962; Jaeggi, 2014; Rosa, 2016)].
+  + ¿Pérdida de **centralidad** o **pérdida de sentido**? .small[(Arendt, 2019; Aguilar, 2001; Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Habermas, 1999, 2002; León & Zemelman, 1997; Lukács, 1970; Sennett, 2019)].
   
 ---
 background-image: url("assets/logo/logo.png")
@@ -520,16 +515,16 @@ background-position: 100% 0%
 
 ## Limitaciones
 
-- No cumplimiento del supuesto linealidad
-- Falta de incorporación de predictores subjetivos
+- No cumplimiento del supuesto **linealidad**
+- Falta de incorporación de **predictores subjetivos**
 
 ## .red[Proyecciones]
 
-- Incorporar predictores subjetivos .small[(percepciones sobre clima laboral, actitudes hacia la desigualdad económica, etc.)] en el análisis.
-- Incorporar nuevos predictores contextuales asociados a las relaciones de clase .small[(tasa de informalidad, días-persona perdidos, etc.)].
-- Complejizar la medición del grado de enajenación hacia el trabajo en su multidimensionalidad.
-- Incorporar el nivel de sector económico en el análisis.
-- Analizar diferentes fenómenos subjetivos .small[(actitudes hacia la democracia, la corporativización de la economía, políticas redistributivas,  el autoempleo, etc.)] incorporando 
+- Incorporar **predictores subjetivos** .small[(percepciones sobre clima laboral, actitudes hacia la desigualdad económica, etc.)] en el análisis.
+- Incorporar nuevos **predictores contextuales** asociados a las relaciones de clase .small[(tasa de informalidad, días-persona perdidos, etc.)].
+- Complejizar la medición del grado de enajenación hacia el trabajo en su **multidimensionalidad**.
+- Incorporar el nivel de **sector económico** en el análisis.
+- Analizar diferentes fenómenos subjetivos .small[(actitudes hacia la democracia, la corporativización de la economía, políticas redistributivas,  el autoempleo, etc.)] incorporando este marco analítico-metodológico.
 
 ---
 
