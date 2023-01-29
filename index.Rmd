@@ -274,7 +274,7 @@ data %>%
   ggplot(aes(x = clase, y = m, fill = "#FF3300")) +
   geom_bar(position = position_dodge(.2),stat = "identity", color = "black") +
   geom_text(aes(label=round(m,3)), vjust=1.5)+
-  labs(title = "Media de actitud enajenada hacia el trabajo según clase social", 
+  labs(title = "Media de actitud mercantilizada hacia el trabajo según clase social", 
        caption = "Elaboración propia en base a ISSP (2015)") +
   xlab("") +
   ylab("") + 
@@ -297,7 +297,7 @@ data %>%
   ggplot(aes(x = reorder(country, -m), y = m, fill = "#FF3300")) +
   geom_bar(position = position_dodge(.2),stat = "identity", color = "black") +
   geom_text(aes(label=round(m,3)), vjust=0.4, hjust=1.3)+
-  labs(title = "Media de actitud enajenada hacia el trabajo por país", 
+  labs(title = "Media de actitud mercantilizada hacia el trabajo por país", 
        caption = "Elaboración propia en base a ISSP (2015)") +
   xlab("") +
   ylab("") + 
