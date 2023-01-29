@@ -95,7 +95,6 @@ background-position: 100% 0%
 <br>
 .content-box-red[
 - Ser humano y trabajo, capitalismo y enajenación .small[(Cohen, 2015; Marx, 2004, 2014; Jaeggi, 2014; Lukács, 1970; Rosa, 2016)].
-- Enajenación y explotación; metafísica y ciencia .small[(Dahrendorf, 1962; Althusser, 2004)].
 - La acción comunicativa y el fin de la centralidad del trabajo .small[(Aguilar, 2001; Antunes, 2005; Arendt, 2019; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Habermas, 1999, 2002; León & Zemelman, 1997; Sennett, 2019)]
 - Una definición amplia del trabajo .small[(Noguera, 2002)], considerando las dimensiones
   + **Cognitivo-instrumental**;
@@ -315,11 +314,6 @@ background-position: 100% 0%
 ## Recursos de poder
 <br>
 - **Poder**: capacidad de las clases capitalista y trabajadora para realizar sus intereses de clase, mutuamente contradictorios (Wright, 2000), frente a la otra clase y/o frente al Estado (Wright, 2015).
-- **Conflicto** articulado en tres esferas (Wright, 2015)
-  + El intercambio (mercado del trabajo),
-  + La producción (proceso de trabajo), y
-  + La política y administración.
-
 - Los **recursos de poder** de la clase trabajadora (Schmalz et al., 2018b):
   + **Asociativo** (densidad sindical);
   + **Estructural** (P.P.T.): de mercado del trabajo (colectivo) y en el espacio de trabajo (individual);
@@ -398,15 +392,15 @@ p = data.frame(clases = factor(c("Proletario",
                                       "Pequeña burguesia no profesional",
                                       "Pequeña burguesia profesional",
                                       "Capitalista")),
-           pred = c(2.23,
-                    2.23-.22,
-                    2.23-.61,
-                    2.23-.22,
-                    2.23-.48,
-                    2.23-.69,
-                    2.23-.34,
-                    2.23-.78,
-                    2.23-.76))
+           pred = c(round(2.23 + (-.53*-.04), 3),
+                    round(2.23 + (-.53*-.04) -.22, 3),
+                    round(2.23 + (-.53*-.04) -.61, 3),
+                    round(2.23 + (-.53*-.04) -.22, 3),
+                    round(2.23 + (-.53*-.04) -.48, 3),
+                    round(2.23 + (-.53*-.04) -.69, 3),
+                    round(2.23 + (-.53*-.04) -.34, 3),
+                    round(2.23 + (-.53*-.04) -.78, 3),
+                    round(2.23 + (-.53*-.04) -.76, 3)))
            
 p = p %>%
   rowwise() %>% 
@@ -489,7 +483,7 @@ background-position: 100% 0%
 ### Nivel micro
 
 - Existe una relación positiva entre el **sometimiento a múltiples tipos de explotación** y la actitud mercantilizada hacia el trabajo. 
-- **Jerarquía** del efecto de los activos: autoridad, calificaciones y propiedad. 
+- **Jerarquía** del efecto de los activos: propiedad, calificaciones, autoridad. 
 - La **opresión económica** ejerce un positivo en la mercantilización de las actitudes hacia el trabajo entre las clases propietarias.
 
 ### Nivel macro
@@ -505,8 +499,8 @@ background-position: 100% 0%
 
 - La **situación individual y contextual** de los sujetos en las **relaciones sociales de producción** tienen un efecto estadísticamente significativo sobre su **aproximación hacia el trabajo remunerado** .small[(Dodson, 2017; Edlund & Lindh, 2015; Elbert & Pérez, 2018; Kelley & Evans, 1995; Pérez Ahumada, 2013; Pérez Ahumada & Andrade de la Horra, 2021; Ringqvist, 2021; Svallfors, 2006)]. 
 - El desarrollo histórico de las **contradicciones** del capitalismo ha significado el **empobrecimiento** de la relación entre las personas y sus labores productivas.
-  + La materialidad del vínculo entre **enajenación** y **explotación** .small[(Althusser, 2004; Dahrendorf, 1962; Jaeggi, 2014; Rosa, 2016)].
-  + ¿Pérdida de **centralidad** o **pérdida de sentido**? .small[(Arendt, 2019; Aguilar, 2001; Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Habermas, 1999, 2002; León & Zemelman, 1997; Lukács, 1970; Sennett, 2019)].
+  + La materialidad del vínculo entre **enajenación** y **explotación** .small[(Althusser, 2004; Dahrendorf, 1962;  Rosa, 2016)].
+  + ¿Pérdida de **centralidad** o **pérdida de sentido**? .small[(Arendt, 2019; Aguilar, 2001; Antunes, 2005; De la Garza y Toledo, 2000; De la Garza Toledo & Neffa, 2001; Jaeggi, 2014; Habermas, 1999, 2002; León & Zemelman, 1997; Lukács, 1970; Sennett, 2019)].
   
 ---
 background-image: url("assets/logo/logo.png")
@@ -562,7 +556,6 @@ background-position: 100% 0%
 Desarrollo y Sociedad. Universidad de Chile
 - Alemán, J. (2008). Labor Market Deregulation and Industrial Conflict in New Democracies: A Cross-National Analysis. Political Studies, 56(4), 830-856. 
 https://doi.org/10.1111/j.1467-9248.2007.00707.x
-- Althusser, L. (2004). La revolución teórica de Marx. Siglo XXI.
 - Antía, F. (2019). The Political Dynamic of Redistribution in Unequal Democracies: The Center-Left Governments of Chile and Uruguay in Comparative Perspective. Latin American Perspectives, 46(1), 152-166. 
 https://doi.org/10.1177/0094582X18806827
 - Antunes, R. (2005). Los sentidos del trabajo: Ensayo sobre la afirmación y la negación del trabajo. Herramienta.
@@ -580,7 +573,6 @@ background-position: 100% 0%
 - Brookes, M. (2018). Power Resources in Theory and Practice: Where to Go from Here. Global Labour Journal, 9(2). https://doi.org/10.15173/glj.v9i2.3571
 - Carneiro, F., Fuentes, G., & Midaglia, C. (2020). Old Friends in New Times: Progressive Parties and Union Movements in the Southern Cone. Latin American Perspectives, 47(4), 112-130. https://doi.org/10.1177/0094582X20924368
 - Cohen, G. A. (2015). La teoría de la historia de Karl Marx: Una defensa. Siglo XXI de España: Editorial Pablo Iglesias
-- Dahrendorf, R. (1962). Las clases sociales y su conflicto en la sociedad industrial. RIALP.
 - De la Garza Toledo, E. de la (Ed.). (2000). Tratado latinoamericano de sociología del trabajo (1. ed). Colegio de México: Facultad Latinoamericana de Ciencias Sociales: Universidad Autónoma Metropolitana: Fondo de Cultura Económica.
 
 ---
